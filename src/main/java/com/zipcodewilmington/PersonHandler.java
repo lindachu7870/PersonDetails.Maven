@@ -43,8 +43,14 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
+        for (int i = 0; i < personArray.length; i++) {
+                result+="\nMy first name is " + personArray[i].getFirstName()
+                        +"\nMy last name is " + personArray[i].getLastName();
+
+            }
 
         return result;
+
     }
 
 
@@ -59,6 +65,11 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
+        for (Person p : personArray) {
+            result+="\nMy first name is " + p.getFirstName()
+                    +"\nMy last name is " + p.getLastName();
+
+        }
 
         return result;
     }
